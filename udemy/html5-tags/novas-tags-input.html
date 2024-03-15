@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas tags de input html 5</title>
+
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" type="text/css" href="css/novas-tags-input.css">
+
+</head>
+<body>
+
+    <form action="">
+
+        <!-- NOVOS INPUTS E ATRIBUTOS DO HTML5 -->
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" autofocus > <!--AUTOFOCUS, selecionará automaticamente o campo que vc quer que o usuário preecha primeiro-->
+        <br><br>
+
+        <!-- EMAIL -->
+        <label for="email">Email</label>
+        <input type="email" id="email" required > <!--REQUIRED, so deixará enviar o formulário se todos os campos estiverem preenchidos-->
+        <br><br>
+
+        <!-- NÚMERO -->
+        <label for="numero">Número</label>
+        <input type="number" id="numero" min="1" max="15" step="2" > <!-- type="number" so deixara ser digitado números /// min/max, defini um número mínimo e um número máximo a serem colocados /// step, esta definindo que irá passar o número de 2 em 2 -->
+        <br><br>
+
+        <!-- URL -->
+        <label for="url">Url</label>
+        <input type="url" id="url" placeholder="ex: http://www..."> <!-- URL, campo de entrada pra colocar endereços eletrônicos // usamos o PLACEHOLDER apenas para colocar um exemplo para o usuário saber como precisa digitar-->
+        <br><br>
+
+        <!-- PESQUISA -->
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" id="pesquisa"> <!-- SEARCH, para o usuário fazer pesquisa sobre algo-->
+        <br><br>
+
+        <!-- RANGE -->
+        <label for="range">Range</label>
+        <input type="range" id="range" min="1" max="10" value="2" > <!-- RANGE, uma barra na horizontal com um marcador, podemos também definir números min/max/value, com ele isso define os gaps entres números e VALUE o valor inicial-->
+        <br><br>
+
+        <!-- DATA -->
+        <label for="data">Data</label>
+        <input type="date" id="data"> <!-- Definir uma data -->
+        <br><br>
+
+        <!-- COR -->
+        <label for="cor">Cor</label>
+        <input type="color" id="cor"> <!-- Definir uma cor -->
+        <br><br>
+
+        <input type="submit" name="" value="Enviar">
+    </form>
+    
+</body>
+</html>
