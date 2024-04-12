@@ -84,13 +84,15 @@ main {
 
 .descricao-pistas h2 {
     border-radius: 10px;
+    font-weight: 700;
     letter-spacing: -0.05em;
     filter: drop-shadow(0px 0px 8px rgb(196, 2, 202));
 }
 
 .descricao-pistas p {
     letter-spacing: 0.01em;
-    filter: drop-shadow(0px 0px 8px rgb(196, 2, 202));
+    color: rgb(172, 170, 170);
+    font-weight: 500;
 }
 
 .descricao-pistas a {
