@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa etária</title>
+
+    <script>
+
+        var idade = parseInt(prompt('Digite sua idade:'))
+
+        /*var idade_crianca = 14
+        var idade_jovem = 29
+        var idade_adulto = 59
+        var idade_idoso =60
+
+
+        if(idade >= 0 && idade <= idade_crianca) {
+            document.write('Criança')
+        } if(idade >= 15 && idade <= idade_jovem) {
+            document.write('Jovem')
+        } if(idade >= 30 && idade <= idade_adulto) {
+            document.write('Adulto')
+        } if(idade >= idade_idoso) {
+            document.write('Idoso')
+        }*/
+
+        if(idade >= 0 && idade < 15) {
+            document.write('Criança')
+        } else if(idade >= 15 && idade < 30) {
+            document.write('Jovem')
+        } else if(idade >= 30 && idade < 60) {
+            document.write('Adulto')
+        } else {
+            document.write('Idoso')
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
