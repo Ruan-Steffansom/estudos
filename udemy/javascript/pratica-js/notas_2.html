@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando JavaScript</title>
+
+    <script>
+
+        var nota1 = parseFloat(prompt('Nota 1:'))
+        var nota2 = parseFloat(prompt('Nota 2:'))
+        var nota3 = parseFloat(prompt('Nota 3:'))
+        var total_notas = (nota1 + nota2 + nota3) / 2
+        var media = 7
+        // document.write(total_notas)
+
+        if (total_notas >= media) {
+            document.write('Sua nota total foi: ' + total_notas + ' e você foi APROVADO, parabéns!')
+        }
+        if (total_notas >= 5 && total_notas < media) {
+            document.write('Sua nota total foi: ' + total_notas + ' e você está de RECUPERAÇÃO, boa sorte!')
+        } 
+        if (total_notas < 5) {
+            document.write('Sua nota total foi: ' + total_notas + ' e você foi REPROVADO, levou o farelo!')
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
