@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+
+    <script>
+
+        var parametro = prompt('Digite um número:')
+
+        switch (parseInt(parametro)) { //ESTE PARAMETRO E ULTILIZADO NÓS CASES PARA FINS DE COMPRARAÇÃO, ESTÁ COMPARAÇÃO E FEITA INTERNAMENTE PELO SWITCH ULTILIZANDO O OPERADOR (===); / case 1 === parametro: /
+
+            case 1: //se parametro === 1
+                document.write('Parametro 1')
+                break /// BREAK E RESPONSAVEL POR INDICAR PRO SWITCH QUE CASO SEJA ENCONTRADO UM (CASE), A INSTRUÇÃO DA QUELE CASE DEVE ACABAR NA INSTRUÇÃO (BREAK).
+
+            case 2: //se parametro === 2
+                document.write('Parametro 2')
+                break
+
+            default: // É OPCIONAL, A DIFERENÇA É QUE AVENDO UMA OPÇÃO INVÁLIDA, NENHUMA INSTRUÇÃO SERA EXECULTADA (funciona como o else/se não).
+                //se parametro não encontrado
+                document.write('Default')
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

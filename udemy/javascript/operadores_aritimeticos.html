@@ -14,13 +14,20 @@
         // num2 = parseInt(num2)
 
         document.write('A soma ente ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br />') //(num1 + num2) parenteses funcionam para estabelecer uma precedencia.
+
         document.write('A multiplicação ente ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '<br />')
+
         document.write('A divisão ente ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br />')
+
         document.write('O módulo ente ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br />')
+
         document.write('O incremento de ' + num1 + ' e: ' + (num1++) + '<br />')
+
         document.write(num1 + '<br />')
+
         document.write('O decremento de ' + num1 + ' e: ' + (--num1) + '<br />')
         */
+
 ////////////////////////////////////////////////////////////////////////////////
 
         //var teste = 10
@@ -38,24 +45,24 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 
-        //var teste = 10
-
-        //teste = teste + 5
-
-        /*FORMA RESUMIDA DE SE TRABALHAR COMO PERADORES ARITIMÉTICOS NO PROCESSO DE ATRIBUIÇÃO*/
-
-        //teste += 5
-        //teste -= 5
-        //teste *= 5
-        //teste /= 5
-        //teste %= 5
-        //document.write(teste)
-        
+        /*
         //CONCATENAÇÃO DE STRING...
+
         var teste = 'Olá '
         teste += 'jorge'
         document.write(teste)
-    
+        */
+
+//////////////////////////////////////////////////////////////////////////////////
+
+        //PRECEDÊNCIA DE EXECUÇÃO DAS OPERAÇÕES ARITIMÉTICAS
+
+        // () - aplicar precedência
+        //1° multiplicação e divisão
+        //2° soma e subtração
+
+        document.write(11 + 5 - (5 * 2 / 2))
+
     </script>
 
 </head>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JS</title>
+
+    <script>
+
+        //VOID : realizam algun tipo de processamento mas não fornecem nenhum retorno para quem fez a chamada.
+
+        //RETORNO : retornan um parametro para quem fex a chamada, este parametro pode ser reutilizado dentro da lógica do script.
+
+        function calcularAreaTerreno (largura, comprimento) {
+
+            //Lógica
+            var area = largura * comprimento
+            
+            return area
+        }
+
+        var largura = parseFloat(prompt('Digite a largura do terreno em metros:'))
+        var comprimento = parseFloat(prompt('Digite o comprimento do terreno em metros:'))
+
+        var area = calcularAreaTerreno(largura, comprimento)
+
+        document.write('O terreno possui ' + area +  ' metros quadrados.')
+
+        /*
+        document.write('O terreno possui ' + calcularAreaTerreno(15, 25) +  ' metros quadrados.')
+        */
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
