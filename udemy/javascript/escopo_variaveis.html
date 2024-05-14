@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variáveis</title>
+
+    <script>
+
+        // 3 escopos: GLOBAL(é o escopo do script como um todo), FUNÇÃO(corresponde ao conteúdo inserido dentro de um bloco de função) e o BLOCO(instruções inseridas dentro de comandos como por exemplo o comando if e o comando switch)
+
+        // os escopos de função e bloco tem acesso as variáveis do escopo global
+
+        // escopo global, tem acesso as variáveis do escopo de bloco, isso porque o opereador var faz com que essa variável sofra uma elevação pro escopo global isto porque o escopo de bloco está dentro do escopo global e com isso o esopo de função terá acesso tambem a está variavável.
+
+        //no escopo de função, essa elevação da variável não acontece, por que diferente do escopo de bloco  ele faz com que as funçãos declaradas dentro dele fique disponivel somente no seu respectivo escopo.
+        
+        //escopo global
+            var serie = 'Friends'
+            
+            //escopo de bloco
+                if(true) {
+                    var serie2 = 'Game of thrones'
+                    document.write(serie)
+                }
+            //////////////////////////////////////
+            document.write(serie2)
+            
+            document.write('<br>')
+            
+            //escopo de função
+                function x(){
+                    var serie3 = 'The Walking Dead'
+                    document.write(serie)
+                    document.write(serie2)
+                }
+                x()
+            //////////////////////////////////////
+        //////////////////////////////////////////
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
