@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Anônimas</title>
+
+    <script>
+
+        //Funções de Callback - são funções encaminhadas como parâmetros para outras funções.
+
+        function exibirArtigo (id, callbackSucesso, callbackErro) {
+            //lógica: recuperar  o id via requisição http
+            if(true) {
+                callbackSucesso('Funções de callback em JS', 'Funções de callback são muito ultilizadas ...')
+            } else {
+                callbackErro('Erro ao recuperar os dados')
+            }
+        }
+
+
+        var callbackSucesso = function(titulo, descricao) {
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr>')
+            document.write('<p>' + descricao + '</p>')
+        }
+        
+
+        var callbackErro = function(erro) {
+            document.write('<p><strong>Erro:</strong>' + erro + '</p>')
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro)
+
+        //exibirArtigo(1, function() {lógica da função}, function() {lógica da função}) --> podemos fazer desta forma, mas dependendo do tamanho desta fumção ou mesmo sua complexidade, pode ser que está forma de código fique difício de ser lida e dar manutenção é ai que entra a tecnica de wrapper que ao invés de criar as funções dentro da chamada de uma função podemos declarar uma variável que ira receber a função anônima com toda sua respequetiva lógica.
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

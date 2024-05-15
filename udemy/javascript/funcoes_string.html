@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções para manipular strings</title>
+
+    <script>
+
+        //Funções nativas para manipular Strings.
+
+        var nome = ' Jorge Sant Ana '
+
+        //propriedade length - (retorna a quantidade de caractere de uma string)
+        document.write(nome.length + '<br>')
+
+        //metodo cahrAt() - (retorna um caractere com base na posição do mesmo dentro da cadeia de caracteres)
+        document.write(nome.charAt(6) + '<br>')
+
+        //metodo indexOf() - (método retorna o índice (posição) da primeira ocorrência de uma string em uma string ou retorna -1 se a string não for encontrada:)
+        document.write(nome.indexOf('a') + '<br>')
+
+        //metodo replace() - (O método substitui um valor especificado por outro valor em uma string:)
+        document.write(nome.replace('Sant Ana', 'Silva') + '<br>')
+
+        //metodo substr() - (O método permite extrair parte de uma string com base em uma posição inicial seguida de um valor que representa a quantidade de caractere que será extraido incluindo a posição inicial.)
+        document.write(nome.substr(6, 4) + '<br>')
+
+        //metodo toLowerCase() - (O método tranforma os caracteres em maiúsculas.)
+        document.write(nome.toLowerCase() + '<br>')
+
+        //metodo toLocaleUpperCase() - (O método transforma os caracteres em minúsculas.)
+        document.write(nome.toLocaleUpperCase() + '<br>')
+
+        //metodo trim() - (O método remove os espaços em branco das extremidades de uma string.)
+        document.write('|-' + nome.trim() + '-|' + '<br>')
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
