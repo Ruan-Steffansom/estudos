@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulanso datas</title>
+
+    <script>
+
+        var num1 = parseFloat(prompt('Digite um número:'))
+        var operacao = prompt('Digite a operaração desejada')
+        var num2 = parseFloat(prompt('Digite outro número:'))
+
+        function calculo(num1, num2, operacao){
+
+            var resultado = 0
+
+            if (operacao == 'soma') {
+                resultado = num1 + num2
+            } else if (operacao === 'subtracao') {
+                resultado = num1 - num2
+            }
+
+            return resultado
+        }
+        document.write('O resuldado é: ' + calculo(num1, num2, operacao))
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
