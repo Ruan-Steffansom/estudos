@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor do Imóvel</title>
+    <script>
+
+        var metragem_imovel = 400
+        var quantidade_quartos = parseFloat(prompt('Quantos quartos você quer ?'))
+
+        var preco_imovel = 300000
+
+        function calcularValorImovel ( quantidade_quartos, preco_imovel) {
+            if (quantidade_quartos == 1) {
+                preco_imovel = preco_imovel
+            } else if (quantidade_quartos == 2) {
+                preco_imovel *= 1.5
+            } else if (quantidade_quartos == 3) {
+                preco_imovel *= 2
+            } else if (quantidade_quartos == 4) {
+                preco_imovel *= 2.5
+            } else {
+                preco_imovel = 'Não temos esta opção !'
+            }
+            return preco_imovel
+        }
+        document.write('O valor do imóvel conforme a opção escolida por você é de: R$ ' + calcularValorImovel (quantidade_quartos, preco_imovel))
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</htm
