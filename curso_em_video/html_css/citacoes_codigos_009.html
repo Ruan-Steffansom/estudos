@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Símbolos - Emoji</title>
+</head>
+<body>
+
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p> <!-- (code) para o usuario consegir ler menlhor o trecho de código exibido-->
+    <pre> <!-- a tag (pre) considera tudo que estiver dentro dela até mesmo os espaços de indentação-->
+        <code>
+            num = int(input('Digite um número:'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('fimn do programa')
+        </code>
+    </pre>
+
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p> <!--usamos a tag (q) para fazer uma citação, quando usarmos em nosso site uma frase de outra pessoa, a tag ira adicionar aspas ("") isso irá dar sentindo a frase, com sentido semântico-->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="#"><!--o atributo (cite) e para colocarmos o endereço eletrônico/link do livro, documentario, video etc... de onde tiramos a frase - (ISSOE MUITO IMPORTANTE PARA OS MECANISMOS DE BUSCA)-->
+        A diferença entre elementos inlines e bloco de texto é impportante. Os elementos HTML neste capítulo decrevem os blocos
+    </blockquote><!--usamos a tag (blockquote) para fazer uma citação para um determinado autor, esta citação ficará delocada do lado esquerdo.-->
+    
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Este é um texto invertido.</bdo></p> <!-- ltr
+    
+</body>
+</html>
