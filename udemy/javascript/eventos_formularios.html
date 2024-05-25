@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Mouse- JavaScript</title>
+
+    <script>
+    </script>
+
+</head>
+<body>
+    <input onfocus="console.log('Evento onfocus - recebeu o foco do mouse')" type="text" placeholder="onfocus"><!--quando o elemento recebe o foco/click do cursor do mouse-->
+    <br>
+    <input onblur="console.log('Evento onblur - perdeu o foco do mouse')" type="text" placeholder="onblur"><!--quando o elemento perde o foco do cursor do mouse-->
+    <br>
+
+    <select  onchange="console.log('Evento onchange - estado foi modificado')"><!--quando o estado do elemento é modificado-->
+        <option value="">-- onchange --</option>
+        <option value="1">-- Primeira opção --</option>
+        <option value="2">-- Segunda opção --</option>
+    </select>
+
+</body>
+</html>

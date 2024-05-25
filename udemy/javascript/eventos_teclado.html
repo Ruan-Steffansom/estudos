@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Mouse- JavaScript</title>
+
+    <script>
+
+    function acao1 () {
+        alert('Evento onkeydown - Qualquer tecla precionada')
+    }
+    function acao2 () {
+        alert('Evento onkeypress - Tecla que representa um caractere precionada')
+    }
+    function acao3 () {
+        alert('Evento onkeyup - Qualquer tecla liberada')
+    }
+
+    </script>
+</head>
+<body>
+    <input onkeydown="acao1()" type="text" placeholder="onkeydown"><br> <!-- o caractere so será reproduzido na tela apos a execução do evento / isso é importânte para tratarmos o caractere antes dele ser exibido, como verificar se é ou não um número ou string-->
+
+    <input onkeypress="acao2()" type="text" placeholder="onkeypress"><br> <!-- o evento acontece antes da exibição do caractere na tela-->
+
+    <input onkeyup="acao3()" type="text" placeholder="onkeyup"><br> <!-- o caractere será reproduzido na tela e somente depois o evento será executado-->
+    
+
+</body>
+</html>
