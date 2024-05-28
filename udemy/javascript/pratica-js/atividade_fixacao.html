@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Atividade de fixação</title>
+
+    <style>
+        
+    </style>
+
+    <script>
+        function fundoInput (bg) {
+            var caracter = document.getElementById('trocando').style.background = bg
+        }
+
+    </script>
+
+</head>
+<body>
+    <h3>Atividade de fixação</h3>
+    <input style="background: #ffffff;"
+    type="text"
+    placeholder="Digite alguma coisa"
+    onmouseover="fundoInput('#f8fc04')"
+    onmouseout="fundoInput('#ffffff')"
+    id="trocando"
+    >
+</body>
+</html>

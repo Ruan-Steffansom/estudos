@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulando estilo de elementos</title>
+
+    <script>
+        function modificaEstilo (corDeFundo, h, w, br) {
+            document.getElementById('troca').style.backgroundColor = corDeFundo
+            document.getElementById('troca').style.height = h
+            document.getElementById('troca').style.width = w
+            document.getElementById('troca').style.borderRadius = br
+            //apartir do atributo (style) que estar definido como propriedade do elemento, conseguimos acesar os atributos css desse elementos e alterar estes atributos apartir da lógica dos nossos scripts.
+        }
+    </script>
+
+</head>
+<body>
+    <h3>Manipulando estilo</h3>
+
+    <button type="button" onclick="modificaEstilo('#ff0000', '100px', '100px', '25%')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#00ff00', '150px', '150px', '35%')">Verde</button>
+    <button type="button" onclick="modificaEstilo('#0000ff', '200px', '200px', '50%')">Azul</button>
+
+    <hr>
+
+    <div style="border: 1px solid #000; height: 100px; width: 100px;" id="troca"></div>
+</body>
+</html>

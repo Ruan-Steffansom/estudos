@@ -9,11 +9,12 @@
         function distribuiCaracter () {
 
             //selecionar o valor digitado
-            var caracter = document.getElementById('entrada').value
+            var caracter = document.getElementById('entrada').value //usando o  atributo (.value) iremos recuperar o  valor contido dentro do elemento.
+
             //limpar o campo de digitação
             document.getElementById('entrada').value = ''
 
-            //limpar espaços em branco nas extremidades da string
+            //usamos o método ( .trim() ) para limpar/remover espaços em branco nas extremidades de uma string.
             caracter.trim()
 
             switch(caracter) {
@@ -27,11 +28,10 @@
                 case '7':
                 case '8':
                 case '9':
-                    //adicionar o caracter no campo referente a números
+                    // se o valor recebido pelo caracter for identtico a alguma das opções, adicionar o caracter no campo referente a números.
                     document.getElementById('apenas_numeros').value += caracter
                     break;
-                default:
-                    //adicionar caracter no campo referente a letras
+                default: //caso nenhuma das opções sejam verdadeiras em relação   ao caracter, adicionar o caracter no campo referente a letras.
                     document.getElementById('apenas_letras').value += caracter
             }
         }
@@ -39,8 +39,10 @@
 
 </head>
 <body>
-    <input type="text" 
-    placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()"
+    <input 
+    type="text" 
+    placeholder="Digite um caracter aqui" 
+    onkeyup="distribuiCaracter()"
     id="entrada"
     >
 
