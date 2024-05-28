@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Atividade de fixação</title>
 
-    <style>
-        
-    </style>
-
     <script>
-        function fundoInput (bg) {
-            var caracter = document.getElementById('trocando').style.background = bg
+        function acionaCampo() {
+            document.getElementById('campo').style.background ='yellow'
         }
 
+        function validaCampo() {
+            var valorCampo = document.getElementById('campo').value
+
+            if(valorCampo.length < 4) { //usamos o método (.length) para recuperar a quantidade de caracteres de uma string
+                document.getElementById('campo').style.background ='red'
+            } else {
+                document.getElementById('campo').style.background ='green'
+            }
+        }
     </script>
 
 </head>
 <body>
     <h3>Atividade de fixação</h3>
-    <input style="background: #ffffff;"
-    type="text"
-    placeholder="Digite alguma coisa"
-    onmouseover="fundoInput('#f8fc04')"
-    onmouseout="fundoInput('#ffffff')"
-    id="trocando"
-    >
+    <input id="campo" type="text" onfocus="acionaCampo()" onblur="validaCampo()">
+
 </body>
 </html>
