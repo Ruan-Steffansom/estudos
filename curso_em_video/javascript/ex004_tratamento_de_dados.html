@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+    <script>
+
+        // var nome = window.prompt('Qual é seu nome ?')
+        //     document.write(`Olá, ${nome}! seu  nome tem ${nome.length} letras.<br/>`)
+        //     document.write(`Seu nome em maiúsculas é ${nome.toLocaleUpperCase()}<br/>`)
+        //     document.write(`Seu nome em minúsculas é ${nome.toLocaleLowerCase()}`)
+
+        var n1 = 1500.5
+            document.writeln(n1.toFixed(2)) //usamos (.toFixed) para definir quantas casas teremos depois do ponto(.)
+            document.write(n1.toFixed(2).replace('.', ',')) //usamos (.replace) para trocar o '.' por uma ',' 
+
+            document.writeln(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})) // este comando serve para definir o valor em dinherio/moeda do pais que escolhermos.
+            document.writeln(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+
+            document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+
+    </script>
+</body>
+</html>
