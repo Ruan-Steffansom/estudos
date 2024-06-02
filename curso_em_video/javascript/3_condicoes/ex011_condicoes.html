@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Verificando Nacionalidade</h1>
+    País em que reside: <input type="text" name="país" id="pais">
+    <input type="button" value="Verificar" id="botao" onclick="mostrarNacionalidade()">
+    <div id="res">
+        <p>Sua Nacionalidade é:</p>
+    </div>
+
+    <script>
+        function mostrarNacionalidade () {
+            var pais_reside = document.querySelector('input#pais').value
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Sua Nacionalidade é: <strong>${pais_reside}</strong></p>`
+
+            if (pais_reside == 'Brasil') {
+                res.innerHTML = `<p>Sua Nacionalidade é: <strong>${pais_reside}</strong></p>`
+                document.getElementById('botao').style.background = 'green'
+            } else {
+                res.innerHTML = `<p>Sua Nacionalidade é: <strong>Estrangeira</strong></p>`
+                document.getElementById('botao').style.background = 'red'
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- var país = 'Portugal'
+console.log(`vivendo em ${país}`)
+if (país == 'Brasil') {
+    console.log('Você é Brasileiro!')
+} else {
+    console.log('Você é Estrangeiro!')
+} -->
