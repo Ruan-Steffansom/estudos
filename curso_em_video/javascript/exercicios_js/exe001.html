@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Condições</h1>
+    <p>1°- Escreva um programa que pergunte ao usuário sua idade e imprima se ele é maior ou menor de idade. </p>
+    <hr>
+    <h3>| Verificação de idade |</h3>
+    <form action="">
+        <label for="idade">Digite sua idade:</label>
+        <input type="number" name="idade" id="idade">
+        <input type="button" value="Verificar" onclick="verificaIdade()">
+    </form>
+    <div id="resultado">Resultado</div>
+
+    <script>
+
+        function verificaIdade () {
+            var idade_min = 18
+            var idade = document.getElementById('idade').value
+            var resultado = document.getElementById('resultado')
+            idade = Number(idade)
+
+            if (idade >= idade_min) {
+                resultado.innerHTML = `Você tem <strong>${idade}</strong> e é maior de idade!`
+            } else {
+                resultado.innerHTML = `Você tem <strong>${idade}</strong> e é menor de idade!`
+            }
+        }
+    </script>
+</body>
+</html>
