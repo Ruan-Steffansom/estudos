@@ -6,7 +6,7 @@
     <title>Modelo de exercício</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body id="fundo">
     <header>
         <h1>Verificador de idade</h1>
     </header>
@@ -21,6 +21,7 @@
                 <label for="masc">Masculinho</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
+                <!-- os input´s radio tem que ter o mesmo name para que so mente um possa ser marcado por vez-->
             </p>
             <p>
                 <input type="button" value="Verificar" onclick="verificar()">
@@ -33,8 +34,6 @@
     <footer>
         &copy;RuanSteffansom
     </footer>
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
