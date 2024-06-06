@@ -20,15 +20,23 @@ console.log(`Passo ${c}`)
 var c = 1
 while (c <= 10) {
     console.log(`Passo ${c}`)
-    c++ // c+1
+    c++
 }
 */
 
 
 
-/* ESTRUTURA DE REPETICAO COM TESTE LOGICO NO INICIO.*/
+/* ESTRUTURA DE REPETICAO COM TESTE LOGICO NO FINAL.
 var c = 1
 do {
     console.log(`Passo ${c}`)
-    c++ // c+1
+    c++
 } while (c <= 10)
+*/
+
+/* ESTRUTURA DE REPETICAO COM VARIAVEL DE CONTROLE*/
+console.log('Vai começar...')
+for (var c = 1; c <= 10; c++){
+    console.log(`Passo ${c}`)
+}
+console.log('FIM!')
