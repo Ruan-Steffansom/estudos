@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Números</title>
+    <style>
+        button {
+            padding: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+    <button onclick="calcularMedia()">Calcular média</button>
+    <p id="result">O resultado vai aparecer aqui...</p>
+
+    <script>
+        function calcularMedia() {
+            let nomeAluno = prompt('Qual é o nome do aluno?')
+            let primeiraNota = Number(prompt(`Qual foi a primeira nota de ${nomeAluno}?`))
+            let segundaNota = Number(prompt(`Além de ${primeiraNota}, qual foi a outra nota de ${nomeAluno}?`))
+            let resultadoNota = (primeiraNota + segundaNota) /2
+            let res = document.getElementById('result')
+
+            res.innerHTML = `<p>Calculando a média final de <mark>${nomeAluno}</mark>.</p>`
+            res.innerHTML += `<p>As notas obtidas foram <mark>${primeiraNota} e ${segundaNota} </mark>.</p>`
+
+            if(resultadoNota < 5) {
+                res.innerHTML += `<p>A média será <mark>${resultadoNota}</mark>, infelizmente você foi <mark>REPROVADO(a)!</mark></p>`
+            } else 
+                if(resultadoNota < 7) {
+                    res.innerHTML += `<p>A média será <mark>${resultadoNota}</mark>, poxa você ficou de <mark>RECUPERAÇÃO!</mark></p>`
+            } else {
+                res.innerHTML += `<p>A média será <mark>${resultadoNota}</mark>, parabéns você foi <mark>APROVADO!</mark></p>`
+            }
+        }
+    </script>
+</body>
+</html>
