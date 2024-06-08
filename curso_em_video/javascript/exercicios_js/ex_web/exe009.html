@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        button {
+            padding: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Interagindo com o sistema</h1>
+    <button onclick="sistema()">Clique em mim</button>
+    <section>
+        <p id="result">Aqui vai aparecer algo...</p>
+    </section>
+    
+    <script>
+        function sistema() {
+            let data = new Date()
+            let res = document.getElementById('result')
+            
+            res.innerHTML = `O que recebi do sistema foi <mark>${data}</mark>`
+        }
+    </script>
+</body>
+</html>

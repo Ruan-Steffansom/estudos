@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        button {
+            padding: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Maior valor</h1>
+    <button onclick="analisarValores()">Clique para começar</button>
+    <section>
+        <p id="result">O resultado vai aparecer aqui...</p>
+    </section>
+    
+    <script>
+        
+        function analisarValores() {
+            let num1 = Number(prompt('Digite o primeiro número:'))
+            let num2 = Number(prompt('Digite o segundo número:'))
+            let resultado = document.getElementById('result')
+
+            if(num1 == num2) {
+                resultado.innerHTML = `Analisando os valores <mark>${num1}</mark> e <mark>${num2}</mark>, ambos são <strong>IGUAIS</strong> `
+            } else if(num1 > num2) {
+                resultado.innerHTML = `Analisando os valores <mark>${num1}</mark> e <mark>${num2}</mark>, o maior valor é <strong>${num1}</strong> `
+            } else {
+                resultado.innerHTML = `Analisando os valores <mark>${num1}</mark> e <mark>${num2}</mark>, o maior valor é <strong>${num2}</strong> `
+            }
+        }
+        
+    </script>
+</body>
+</html>

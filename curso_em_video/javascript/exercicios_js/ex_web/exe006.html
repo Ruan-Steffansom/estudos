@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cliques</title>
+    <style>
+        button {
+            padding: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick="contarCliques()">Clique em mim</button>
+    <button onclick="zerarCliques()">Zerar o contador</button>
+    <p id="result">O contador está com <mark>0</mark> cliques.</p>
+
+    <script>
+
+        let res = document.getElementById('result')
+        let cliques = 0
+
+        function contarCliques() {
+            cliques++
+        res.innerHTML = `O contador está com <mark>${cliques}</mark> cliques.`
+        }
+
+        function zerarCliques() {
+            cliques = 0
+            res.innerHTML = `O contador está com <mark>${cliques}</mark> cliques.`
+        }
+
+    </script>
+</body>
+</html>

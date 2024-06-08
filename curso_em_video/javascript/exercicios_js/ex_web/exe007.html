@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cliques</title>
+    <style>
+        button {
+            padding: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick="parimpar()">Clique para iniciar</button>
+    <section>
+        <p id="result">O resultado vai aparecer aqui...</p>
+    </section>
+
+    <script>
+        function parimpar() {
+            let numero = Number(prompt('Digite um número: '))
+            let res = document.querySelector('p#result')
+
+            if (numero % 2 == 0) {
+                res.innerHTML = `O número <strong>${numero}</strong> que foi digitado é <strong>Par!</strong>`
+            } else {
+                res.innerHTML = `O número <strong>${numero}</strong> que foi digitado é <strong>Ímpar!</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
