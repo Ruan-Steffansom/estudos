@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--     Idade	                            Categoria
+            5 a 7 anos  	                    Infantil A
+            8 a 10 anos 	                    Infantil B
+            11-13 anos  	                    Juvenil A
+            14-17 anos  	                    Juvenil B
+    Maiores de 18 anos (inclusive)      	    Adulto -->
+
+    <h2>Faça um procedimento que recebe a idade de um nadador por parâmetro e retorna , também por parâmetro, a categoria desse nadador de acordo com a tabela abaixo:</h2>
+    
+    <hr>
+
+    <div class="container">
+        <h3>Preencha os campos a baixo.</h3>
+        <section class="area_dados">
+            <form action="">
+                <label for="nomeAtleta">Nome:</label>
+                <input type="text" name="nomeAtleta" id="nomeAtleta" placeholder="Digite seu nome" maxlength="25" autofocus> <br><br>
+                <label for="idadeAtleta">Idade:</label>
+                <input type="number" name="idadeAtleta" id="idadeAtleta" placeholder="Digite sua idade" min="5" max="50"> <br><br>
+                <label for="esporte">Esporte:</label>
+                <input type="text" name="esporte" id="esporte" placeholder="Digite seu esporte" maxlength="15"> <br><br>
+                <input type="submit" value="Verificar Categoria" onclick="categoriaNadador()">
+            </form>
+        </section>
+
+        <section>
+            <div class="respostaCategoria"></div>
+        </section>
+    </div>
+
+    <script>
+        let nomeAtleta = document.getElementById('nomeAtleta')
+        let idadeAtleta = document.getElementById('idadeAtleta')
+        let esporte = document.getElementById('esporte')
+        let res = document.getElementsByClassName('respostaCategoria')
+    </script>
+
+</body>
+</html>
