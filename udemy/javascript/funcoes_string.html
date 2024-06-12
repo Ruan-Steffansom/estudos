@@ -7,24 +7,25 @@
 
     <script>
 
-        //Funções nativas para manipular Strings.
+        //FuUNÇÕES NATIVAS PARA MANIPULAR STRING.
 
         var nome = ' Jorge Sant Ana '
+        //    0,1,2,3,4,5,6,7,8,9,10,11,12
 
-        //propriedade length - (retorna a quantidade de caractere de uma string)
+        //propriedade length - (retorna a quantidade de caractere de uma string [espaços em branco também são caracteres, a diferença e que eles não pusuem representação visual] )
         document.write(nome.length + '<br>')
 
         //metodo cahrAt() - (retorna um caractere com base na posição do mesmo dentro da cadeia de caracteres)
-        document.write(nome.charAt(8) + '<br>')
+        document.write(nome.charAt(7) + '<br>')
 
-        //metodo indexOf() - (método retorna o índice (posição) da primeira ocorrência de uma string em uma string ou retorna -1 se a string não for encontrada:)
-        document.write(nome.indexOf('a') + '<br>')
+        //metodo indexOf() - (método retorna o índice (posição) da primeira ocorrência de um caracter em uma string ou retorna -1 se o caracter não for encontrado.)
+        document.write(nome.indexOf('A') + '<br>')
 
-        //metodo replace() - (O método substitui um valor especificado por outro valor em uma string:)
+        //metodo replace() - (O método substitui um valor especificado por outro valor em uma string)
         document.write(nome.replace('Sant Ana', 'Silva') + '<br>')
 
         //metodo substr() - (O método permite extrair parte de uma string com base em uma posição inicial seguida de um valor que representa a quantidade de caractere que será extraido incluindo a posição inicial.)
-        document.write(nome.substr(6, 5) + '<br>')
+        document.write(nome.substr(7, 4) + '<br>')
 
         //metodo toLowerCase() - (O método tranforma os caracteres em maiúsculas.)
         document.write(nome.toLowerCase() + '<br>')
