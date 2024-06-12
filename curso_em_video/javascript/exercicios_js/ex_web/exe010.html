@@ -39,10 +39,24 @@
     </div>
 
     <script>
-        let nomeAtleta = document.getElementById('nomeAtleta')
-        let idadeAtleta = document.getElementById('idadeAtleta')
-        let esporte = document.getElementById('esporte')
-        let res = document.getElementsByClassName('respostaCategoria')
+        var idade = prompt('Qual a sua idade?')
+        var caregoria = categoria(idade, categoria)
+
+        function categoria(idade, categoria) {
+            if(idade >=5 && idade <= 7) {
+                    alert(`Você tem ${idade} anos, então sua categoria é Infantil A!`)
+                }else if(idade <= 10){
+                    alert(`Você tem ${idade} anos, então sua categoria é Infantil B!`)
+                }else if(idade <= 13) {
+                    alert(`Você tem ${idade} anos, então sua categoria é Juvenil A!`)
+                }else if(idade <= 17) {
+                    alert(`Você tem ${idade} anos, então sua categoria é Juvenil B!`)
+                } else {
+                    alert(`Você ja atingil a maior idade, então sua categoria é Adulto!`)
+                }
+
+        }
+        console.log(categoria)
     </script>
 
 </body>

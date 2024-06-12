@@ -25,12 +25,11 @@
             document.write('<p>' + descricao + '</p>')
         }
         
-
         var callbackErro = function(erro) {
             document.write('<p><strong>Erro:</strong>' + erro + '</p>')
         }
 
-        exibirArtigo(1, callbackSucesso, callbackErro)
+        exibirArtigo(1, callbackSucesso, callbackErro) /*não ultilizamos os () depois do nome da função pois se usarmos estaremos indicando para o interpretador do javascript que ele deve execultar a função no momento em que ela for passada como parametro, com isso so seria enviado como parametro o valor obtido com a execulção da funcão e não a função em si.*/
 
         //exibirArtigo(1, function() {lógica da função}, function() {lógica da função}) --> podemos fazer desta forma, mas dependendo do tamanho desta fumção ou mesmo sua complexidade, pode ser que está forma de código fique difício de ser lida e dar manutenção é ai que entra a tecnica de wrapper que ao invés de criar as funções dentro da chamada de uma função podemos declarar uma variável que ira receber a função anônima com toda sua respequetiva lógica.
 
