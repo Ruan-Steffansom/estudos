@@ -10,10 +10,10 @@
 
         //Funções nativas para manipular datas.
 
-        var data = new Date() // new Date() faz com que um novo objeto de data seja criado e atribuido a uma variável, apartir desta variável portanto temos acesso a um objeto que contem todos os detalhes de datas no momento da instância do objeto / momento em que criamos a instrução new date()
+        var data = new Date() // o método new Date() faz com que um novo objeto de data seja criado e atribuido a uma variável, apartir desta variável portanto temos acesso a um objeto que contem todos os detalhes de datas no momento da instância do objeto / momento em que criamos a instrução new date()
 
-        //o ponto(.) indica pára o JavaScript que ele deve procurar algumrecurso dentro do objeto
-        document.write(data.getDate() + '<br>')  //recuperando o dia
+        //o ponto(.) indica para o JavaScript que ele deve procurar algum recurso dentro do objeto
+        document.write(data.getDate() + '<br>')  //recuperando o dia/data
 
         document.write(data.getMonth() + 1 + '<br>') //recuperando o mês (OBS: ele considera os meses de 0 a 11 iniciando por janeiro que seria 0), com isso precisariamos somar o valor .getMonth + 1, para ajustar a forma de como representamos o mês no mundo real.
 

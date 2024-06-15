@@ -14,7 +14,10 @@
         //adicionar / remover dias
         // para remover bata trocar o sinal de (+) por (-)
         document.write(data.toString())
-        data.setDate(data.getDate() + 1) 
+
+        data.setDate(data.getDate() + 1)
+        //usamos (data.setDate) para adicionar algun valor a nosa variável que esta guardando o objeto new date(), en seguida usamos (data.getDate) para decuperar o valor desta variável e somamos a + 1. 
+
         document.write('<hr>')
         document.write(data.toString())
         document.write('<br><br><hr><hr>')
@@ -39,10 +42,10 @@
         //DIFERENÇA DE DIAS ENTRE DUAS DATAS.
         //new Date(year, month, day, hours, minutes, seconds, milliseconds)
 
-        //16/05/2024
+        //15/01/2017
         var data1 = new Date(2017, 0, 15)
 
-        //24/06/2024
+        //23/02/20217
         var data2 = new Date(2017, 1, 23)
 
         document.write(data1.toString())
@@ -51,16 +54,16 @@
 
 
         document.write('<br><br><hr>')
-        //converter as datas para algo que possamos calcular - (podemos usar o método .getTime - este método recupera a uantidade de milissegundos que existe entre as datas de 1 de janeiro de 1970 até a data em questão.)
+        //converter as datas para algo que possamos calcular - (podemos usar o método .getTime - este método recupera a quantidade de milissegundos que existe entre as datas de 1 de janeiro de 1970 até a data em questão.)
         document.write(data1.getTime())
         document.write('<hr>')
         document.write(data2.getTime())
         
         document.write('<br><br><hr>')
         
-        //encontrarr a quantidade de milissegundos entre data1 e data2
+        //encontrar a quantidade de milissegundos entre data1 e data2
         var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
-        document.write(milissegundos_entre_datas) //usamos a biblioteca (Math) com seu método (abs) -> (Math.abs) para o valor absoluto de um número, que é ele mesmo so que positivo.
+        document.write(milissegundos_entre_datas) //usamos a biblioteca (Math) com seu método (abs) -> (Math.abs) para obter o valor absoluto de um número, que é ele mesmo so que positivo.
 
         document.write('<br><br><hr>')
         
@@ -70,14 +73,15 @@
         //cada minuto tem 60 segundos, 
         //cada segundo tem 1000 milissegubdos
         
-        //quantos milissegundos tem em um dis ?
+        //quantos milissegundos tem em um dia ?
         var milissegundos_por_dia = (1*24*60*60*1000)
         document.write('1 dia tem: ' + milissegundos_por_dia + ' milissegundos')
+        //1 dia tem 86.400.000 milissegundos
         
         document.write('<br><br><hr>')
 
-        //dividindo os milissegundos entre data1 e data2 pelos milissegundos existentes em um dia.
-        document.write('A diferença entre data1 data2 é de: ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dias.') // usamos (math.ceil) para arredondar para cima o valor obtido.
+        //dividindo os milissegundos que temos entre data1 e data2 pelos milissegundos existentes em um dia.
+        document.write('A diferença entre data1 data2 é de: ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dias.') // usamos ( math.ceil() ) para arredondar para cima o valor obtido.
     </script>
 
 </head>
