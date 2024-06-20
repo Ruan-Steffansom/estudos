@@ -83,7 +83,7 @@
               <button onclick="calcular('acao', '=')" type="button" class="btn btn-dark btn-lg enter">=</button>
             </div>
 
-            <div class="row" style="margin-top: -60px">
+            <div class="row" style="margin-top: -60px;">
               <button onclick="calcular('valor', 0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
               <button onclick="calcular('acao', '.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
             </div>
@@ -107,7 +107,8 @@
           }
 
           if(valor === '=') {
-            var valor_campo = eval(document.getElementById('resultado').value) //usamos a função ( eval() ) para processar essa string no contexto do interpretador javascript com isso ela interpreta essa string como sendo uma instrução javascript e nos retorna um resultado.
+            var valor_campo = eval(document.getElementById('resultado').value) 
+            //usamos a função ( eval() ) para processar essa string no contexto do interpretador javascript com isso ela interpreta essa string como sendo uma instrução javascript e nos retorna um resultado.
             document.getElementById('resultado').value = valor_campo 
           }
 
