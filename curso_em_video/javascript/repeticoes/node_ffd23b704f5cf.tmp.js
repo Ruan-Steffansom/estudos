@@ -43,9 +43,7 @@ console.log('FIM!')*/
 
 var c = 1
 
-do {
-    console.log(`Passo ${c}`)
+do {console.log(`Passo ${c}`)
+} while (c <= 6) {
     c++
-} while (c <= 6) 
-    
-    
+    }
