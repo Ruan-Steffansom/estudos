@@ -28,6 +28,6 @@ let inicio = document.getElementById('txti')
                 res.innerHTML += ` ${contador} \u{1F449}`
             }
         }
-        res.innerHTML += `\u{1F3C1} Fim!` //codigo do unicode emoji no js so funcona entre crase(``)
+        res.innerHTML += `\u{1F3C1} Fim!` //codigo do unicode emoji no js so funciona entre crase(``)
     }
 }
