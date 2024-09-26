@@ -12,7 +12,7 @@ function tabuada() {
             let item = document.createElement('option') //criando um elemento 'option'
             item.text = `${numero} x ${contador} = ${numero * contador}`
             item.value = `tab${contador}` //saber qual o item foi selecionado
-            tab.appendChild(item)
+            tab.appendChild(item) //adicionar um elemento filho que será um '"item'
             contador++
         }
     }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="Nmaca"> Quantidade de maçã:
+            <input type="number" name="numero-maca" id="Nmaca">
+        </label> 
+        <input type="button" value="Verificar Valor Total" class="btn" onclick="verificarPreco()">
+    </form>
+    <div>
+        <p style="margin-top: 30px;">
+            TOTAL DA COMPRA: <span id="res"></span>
+        </p>
+
+    <script>
+        function verificarPreco() {
+            var Qmaca = document.getElementById('Nmaca').value
+            var valor = 0.30
+            
+            res.innerHTML += ''
+            if (Qmaca < 12) {
+                res.innerHTML = (Qmaca * valor)
+            } else {
+                valor = 0.25
+                res.innerHTML = (Qmaca * valor)
+            }
+        }
+    </script>
+</body>
+</html>

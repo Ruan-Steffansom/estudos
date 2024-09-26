@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="senha"> Digite sua senha:
+            <input type="password" name="senha" id="txts">
+        </label> 
+        <input type="button" value="ACESSAR" class="btn" onclick="entrar()">
+    </form>
+    <div>
+        <p id="res">
+            resultado...
+        </p>
+    </div>
+
+    <script>
+        function entrar() {
+            var acesso = 12345
+            var senha = document.getElementById('txts').value
+            senha = Number(senha)
+            var res = document.getElementById('res')
+
+            if (senha == acesso) {
+                res.innerHTML = " "
+                res.innerHTML = "ACESSO PERMITIDO"
+            } else {
+                res.innerHTML = "ACESSO NEGADO"
+            }
+            
+        }
+    </script>
+</body>
+</html>
