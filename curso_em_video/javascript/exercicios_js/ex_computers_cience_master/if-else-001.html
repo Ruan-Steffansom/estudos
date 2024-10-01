@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF - ELSE</title>
+    <style>
+
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 30px ;
+        }
+        
+        label{
+            font-weight: 600;
+        }
+
+        input {
+            margin: 10px 8px 30px  8px;
+            border: none;
+            height: 40px;
+            width: 300px;
+            border-radius: 50px;
+            padding-left: 10px;
+        }
+
+        .verificar {
+            font-size: 17px;
+            font-weight: 600;
+            padding: 8px 50px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 15px;
+        }
+
+        .verificar:hover {
+            background-color: aquamarine;
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exercícios (if - else)</h1>
+        <p>
+            Faça um programa que peça dois números e verifique (usando if e else) e imprima o maior deles.
+        </p>
+    </header>
+    <hr>
+
+    <form action="">
+        <label for="txtnum1">Digite o primeiro número:</label> <br>
+        <input type="number" name="txtnum1" id="txtnum1"> <br>
+
+        <label for="txtnum2">Digite o segundo número:</label> <br>
+        <input type="number" name="txtnum2" id="txtnum2"> <br>
+
+        <input class="verificar" type="button" value="Verificar" onclick="verificar()">
+
+    </form>
+
+    <div id="res"></div>
+
+    <script>
+        
+        function verificar () {
+            
+            var num1 = document.getElementById('txtnum1').value
+            var num2 = document.getElementById('txtnum2').value
+            var res =  document.getElementById('res')
+            
+            num1 = Number(num1)
+            num2 = Number(num2)
+
+            if (num1 === num2) {
+                res.innerHTML = `Os números ${num1} é ${num2} são iguais.`
+            } else if (num1 > num2) {
+                res.innerHTML = `O número ${num1} é maior que ${num2}.`
+            } else {
+                res.innerHTML = `O número ${num2} é maior que ${num1}.`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

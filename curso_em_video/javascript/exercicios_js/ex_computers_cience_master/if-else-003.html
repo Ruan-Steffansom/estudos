@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF - ELSE</title>
+    <style>
+
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 30px ;
+        }
+        
+        label{
+            font-weight: 600;
+        }
+
+        input {
+            height: 40px;
+        }
+        
+        .verificar {
+            height: 50px;
+            width: 300px;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 8px 50px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 15px;
+        }
+
+        .verificar:hover {
+            background-color: aquamarine;
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exercícios (if - else)</h1>
+        <p>
+            Faça um programa que verifique (usando if e else) se uma letra digitada é “F” ou “M”. Conforme a letra escrever: F – Feminino, M- Masculino, Sexo inválido.  
+        </p>
+    </header>
+    <hr>
+
+    <form action="">
+        <label for="">Digite um número:</label> 
+        <input type="radio" name="txtnum1" id="txtnum1"> 
+        <input type="radio" name="txtnum1" id="txtnum1"> <br>
+
+        <input class="verificar" type="button" value="Verificar" onclick="verificar()">
+
+    </form>
+
+    <div id="res"></div>
+
+    <script>
+        
+        function verificar () {
+            
+            var numero = document.getElementById('txtnum1').value
+            var res =  document.getElementById('res')
+            
+            numero = Number(numero)
+            
+            if (numero >= 0) {
+                res.innerHTML = `O número ${numero} é PAR.`
+            } else {
+                res.innerHTML = `O número ${numero} é IMPAR.`
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

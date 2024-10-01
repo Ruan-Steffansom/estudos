@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF - ELSE</title>
+    <style>
+
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 30px ;
+        }
+        
+        label{
+            font-weight: 600;
+        }
+
+        input {
+            margin: 10px 8px 30px  8px;
+            border: none;
+            height: 40px;
+            width: 300px;
+            border-radius: 50px;
+            padding-left: 10px;
+        }
+
+        .verificar {
+            font-size: 17px;
+            font-weight: 600;
+            padding: 8px 50px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 15px;
+        }
+
+        .verificar:hover {
+            background-color: aquamarine;
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exercícios (if - else)</h1>
+        <p>
+            Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo  .
+        </p>
+    </header>
+    <hr>
+
+    <form action="">
+        <label for="txtnum1">Digite um número:</label> <br>
+        <input type="number" name="txtnum1" id="txtnum1"> <br>
+
+        <input class="verificar" type="button" value="Verificar" onclick="verificar()">
+
+    </form>
+
+    <div id="res"></div>
+
+    <script>
+        
+        function verificar () {
+            
+            var numero = document.getElementById('txtnum1').value
+            var res =  document.getElementById('res')
+            
+            numero = Number(numero)
+            
+            if (numero >= 0) {
+                res.innerHTML = `O número ${numero} é PAR.`
+            } else {
+                res.innerHTML = `O número ${numero} é IMPAR.`
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
