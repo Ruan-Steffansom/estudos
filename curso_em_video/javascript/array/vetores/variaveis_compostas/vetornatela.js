@@ -11,12 +11,14 @@ console.log(valores[5])
 */
 
 /* 
-for(let posicao=0; pos < valores.length; pos++){
+for(let pos=0; pos < valores.length; pos++){
     console.log(`A posição ${posicao} tem o valor ${valores[posicao]}`)
 }
 */
 
-//FOR DE FORMA SIMPLIFICADA (ESSA SINTAXE DO FOR DO FUNCIONA PARA ARRAYS E OBJECT -- todo array em javascript é um object )
-for(let posicao in valores){ // ( for -> para | in -> dentro/em ) para cada (posicao) dentro de (nvalores) vou mostrar o ( console.log(`A posição ${posicao} tem o valor ${valores[posicao]}`)  )
+
+//FOR DE FORMA SIMPLIFICADA (ESSA SINTAXE DO FOR SO FUNCIONA PARA ARRAYS E OBJECT -- todo array em javascript é um object )
+
+for(let posicao in valores){ // ( for -> para | in -> dentro/em ) para cada (posicao) dentro de (valores) vou mostrar o ( console.log(`A posição ${posicao} tem o valor ${valores[posicao]}`)  )
     console.log(`A posição ${posicao} tem o valor ${valores[posicao]}`)
 }
