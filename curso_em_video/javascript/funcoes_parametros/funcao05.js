@@ -1,5 +1,5 @@
 //Função recursiva | RECURSIVIDADE 
-//chamandoa função dentro dela mesma
+//chamando a função dentro dela mesma
 
 function fatorial (n) {
     if (n == 1) {

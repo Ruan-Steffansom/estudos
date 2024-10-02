@@ -8,4 +8,4 @@ function parimpar(n) {
 let res = parimpar(4)
 console.log(res)
 
-console.log(parimpar(5)) 
+console.log(parimpar(5))
