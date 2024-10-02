@@ -1,18 +1,18 @@
 let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
-let valores = [] // nossa array vai receber os dados diditados
+let valores = [] // nosso vetor/array vai receber os dados diditados
 
 function isNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
-        return true
+        return true // não vai escrever nada na tela apenas vai ter um retorno verdadeiro validando o numero em questão.
     } else {
         return false
     }
 }
 
 function inLista(n, l) {
-    if(l.indexOf(Number(n)) != -1) {
+    if(l.indexOf(Number(n)) != -1) { // se o numero analizado for encontrado na lista.
         return true
     } else {
         return false
@@ -20,8 +20,8 @@ function inLista(n, l) {
 }
 
 function adicionar() {
-    if(isNumero(num.value) && !inLista(num.value, valores)) {//so ira adicionar na lista se o numero digitado for realmente um número e não estiver na lista.
-    valores.push(Number(num.value)) //adiconando valor ao nosso array
+    if(isNumero(num.value) && !inLista(num.value, valores)) {// o dado digitado será analisado e só vai ser adicionar na lista se ele for um número e não estiver na lista.
+    valores.push(Number(num.value)) //adiconando valor ao nosso veto/array
     let item = document.createElement('option') //crinando um elemento 'option' 
     item.text = `Valor ${num.value} adicionado.` // definindo o tipo do elemento e atribuindo valor a ele
     lista.appendChild(item) // adicionando nosso elemento a lista
