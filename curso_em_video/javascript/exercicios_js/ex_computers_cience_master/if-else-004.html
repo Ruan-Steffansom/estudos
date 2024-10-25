@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF - ELSE</title>
+    <style>
+
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 30px ;
+        }
+
+        input {
+            height: 25px;
+            margin-left: 10px;
+        }
+        
+        .verificar {
+            height: 50px;
+            width: 300px;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 8px 50px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 15px;
+        }
+
+        .verificar:hover {
+            background-color: aquamarine;
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exercícios (if - else)</h1>
+        <p>
+            Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante.  
+        </p>
+    </header>
+    <hr>
+
+    <form action="">
+        <span>Digite uma letra:</span>
+        <input type="text" name="txt" id="txt"> <br>
+
+        <input class="verificar" type="button" value="Verificar" onclick="verificar()">
+
+    </form>
+
+    <div id="res"></div>
+
+    <script>
+        
+        var letra = document.getElementById(txt).value
+
+        function verificar(letra) {
+            switch (letra) {
+                case 'A':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'E':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'I':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'O':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'U':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'a':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'e':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'i':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'o':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+                case 'u':
+                    res.innerHTML = `A letra digitada é Vogal!`
+                break
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
